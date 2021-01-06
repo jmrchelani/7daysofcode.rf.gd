@@ -45,7 +45,6 @@ bool isNum(char c) {
 
 int main() {
 	string a = "21bcdfghjklnprstvwy0123456789";
-	string b = "21fghjklnoprtvwxzac0123456789";
 	a = encryptIt(a, 4);
 	string ans = "";
 	for(auto x : a) {
