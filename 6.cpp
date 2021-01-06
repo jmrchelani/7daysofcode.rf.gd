@@ -56,7 +56,7 @@ bool isIn(char d, string a) {
 string separateThem(string inString, int& ocunt){
   string oString = "";charTypeT st=other;
     for(auto c:inString){
-        if( (st==alpha && charType(c)==digit) || (st==digit && charType(c)==alpha) ) {
+        if( (st==alpha && charType(c)==digit) || (st==digit && charType(c)==alpha) || (c == '&') || (c == '%') ) {
 		
           oString.push_back(' ');
           ocunt++;
@@ -82,7 +82,7 @@ int main() {
 		else full += b;
 	}
 	int count = 0;
-	string arr[108];
+	string arr[109];
 	full = separateThem(full, count);
 	splitString(arr, full);
 	cout << full << endl ;
