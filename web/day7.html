@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - PPL</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <a style="color: #046e09;" href="index.html"><< BACK</a>
+    <header>
+        <h1 class="logo">Day 7</h1>
+    </header>
+    <section>
+        <p>
+            After having a great snack time, you are now returning back to your car and suddenly see Alice running toward you. Alice reaches you and, breathing heavily, tells you that the gate is not closing. You are startled by what he is saying as you just fixed his password some time ago.
+        </p>
+        <p>
+            For confirmation’ sake- you go to his operator room and check the gate. It actually doesn’t close when the password is entered. After some time of research, you find that there is a mismatch in the password entered to open the gate and the old saved password’s encryption key for closing the gate. 
+        </p>
+        <p>
+            The gate closes in such a way that it saves an encrypted key of the old password. Now you have to replace the old password’s key with the new password’s key.
+        </p>
+        <p>
+            You already have the new password which you obtained before opening the door, now to convert the password into a key you have these following rules specified in the user manual on the Operator’s panel of the gate’s company.
+        </p>
+        <p>
+            The rules are as following:
+        </p>
+        <ul>
+            <li>
+                The original password should be encrypted using Caesar Cipher with a key of +4, that encryption affects alphabets (A/a to Z/z) only.
+            </li>
+            <li>
+                All the characters other than number and alphabets (a-z) must be removed.
+            </li>
+            <li>
+                The alphabets in the resulting hash should be converted into numbers like: A/a to 0, B/b to 1, C/c to 2, D/d to 3 and so on.
+            </li>
+            <li>
+                That's the encryption key we need to save in the gate’s closing function.
+            </li>
+            
+        </ul>
+        <p>
+            It is your duty to help Alice- Why? Because you live on this planet then you obviously owe to the community and you must give back. OK? Now do this.
+        </p>
+
+        <form action="submit.php" method="POST" class = "ans">
+            <input type="hidden" name="day" value="D" />
+            <div>
+                <label for="anss">
+                    Answer:
+                </label>
+                <input type="text" name="answer" id = "anss" value="">
+            </div>
+            <br>
+            <div>
+                <label for="roll" >
+                    Roll No:
+                </label>
+                <input type="text" name="roll" id = "roll" value="">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+    </section>
+</body>
+</html>

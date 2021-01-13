@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - PPL</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <a style="color: #046e09;" href="index.html"><< BACK</a>
+    <header>
+        <h1 class="logo">Day 6</h1>
+    </header>
+    <section>
+        <p>
+            Thanks to you, Alice was able to open the gate and also retrieve his new password. You feeling happy; go to the E-Vending machine nearby because you also want to enjoy the evening with a snack, without a snack what the hell will you enjoy?
+        </p>
+        <p>
+            Unfortunately, the E-Vending machine is also corrupted because It is rarely used and this also proves how damned unlucky you are by the way. So, now to grab a snack- You have to fix the E-Vending software. The software works fine but just needs to be set in such a manner that it accepts credit card successfully.
+        </p>
+        <p>
+            Lucky you, the source code is present there and there is a configuration file (cfg) along with it. The config file is used during compilation and which results into a secret encryption key later on to help the software run.
+        </p>
+        <p>
+            The source code has an error in its logic and is not turning the config into a real secret key. All you need to do is to fix the logic and run the program to get the secret key and facilitate the software.
+        </p>
+        <p>
+            Luckily, the code has comments on it which describe how the config file is turned into a secret key, which are as following:
+        </p>
+        <ul>
+            <li>
+                Most important comment! Spaces in the CFG file must be eradicated before anything else otherwise the key will be generated wrong.
+            </li>
+            <li>
+                From the config file, take all the integers (number between strings, like if AB12CD then the integer is 12 not 1 and 2 seperately) and change them to alphabet according to following rule:
+                <ul>
+                    <li>
+                        The integers less than zero and equal to zero must be converted into o.
+                    </li>
+                    <li>
+                        Integers greater than zero must be converted to alphabets like: 1 to A, 2 to B, 3 to C and so on. 
+                    </li>
+                    <li>
+                        The integers greater than 26 must be converted to % sign if the number is odd and to & if the number is even.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Now all we have is alphabets and % and &, lowercase and uppercase. These must be collected in such a way that the previous collected ones are not repeated. In this case, lowercase and uppercase are different entities. Like if A is already in the resultant collection, a can be added but A can not be added again. Following this rule, you have to collect all the alphabets and make sure that you are not changing the order in which they occur like: “aPndAhduUamsP” is changed into “aPndAhuUms”. Same goes for % and & signs.
+            </li>
+            <li>
+                Thats the secret key- Woah.
+            </li>
+
+        </ul>
+        <p>
+            You have to find the secret key and insert in the E-Vending machine’s software so that you can purchase a snack later on.
+        </p>
+        <p>
+            Following is the cfg file obtained from that machine:
+        </p>
+
+        <pre class="input">
+            
+
+J4 4 6543a3T5h7s
+d9Q8 f0sag 4w6e09 r2i31e3
+Wi573624 982333u4s
+G5 ahf8jsg 2a1j5r65 768yuf7g45j4 ew
+6ui2 r2d3 hgsfs67jh
+3w 45 g6w7e8ukf 3h34y
+7ebc 87jsadb8 7a2U
+G7e9q32 t6
+5l9o42 y 7h9of
+2o 67na7hji3zA6
+&T2bc 
+            
+        </pre>
+
+        <form action="submit.php" method="POST" class = "ans">
+            <input type="hidden" name="day" value="S" />
+            <div>
+                <label for="anss">
+                    Answer:
+                </label>
+                <input type="text" name="answer" id = "anss" value="">
+            </div>
+            <br>
+            <div>
+                <label for="roll" >
+                    Roll No:
+                </label>
+                <input type="text" name="roll" id = "roll" value="">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+    </section>
+</body>
+</html>

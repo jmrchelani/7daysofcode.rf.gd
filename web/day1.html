@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 - PPL</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <a style="color: #046e09;" href="index.html"><< BACK</a>
+    <header>
+        <h1 class="logo">Day 1</h1>
+    </header>
+    <section>
+        
+        <p>
+            The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17. <br>Find the sum of all the primes below two million.
+        </p>
+        <p>
+            As it looks, its so easy and can be done by looping all the way to 2 million and using modulo but that will take a lot of time. It will be really great if you try to find a solution which takes less time like less than 20 seconds?
+        </p>
+        <p>
+            For those guys who know time and space complexity and Big O notation, can you try to get O(n^2) atleast for this?
+        </p>
+        <p>
+            Waiting for your solutions :)
+        </p>
+
+        <form action="submit.php" method="POST" class = "ans">
+            <input type="hidden" name="day" value="M" />
+            <div>
+                <label for="anss">
+                    Answer:
+                </label>
+                <input type="text" name="answer" id = "anss" value="">
+            </div>
+            <br>
+            <div>
+                <label for="roll" >
+                    Roll No:
+                </label>
+                <input type="text" name="roll" id = "roll" value="">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - PPL</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <a style="color: #046e09;" href="index.html"><< BACK</a>
+    <header>
+        <h1 class="logo">Day 5</h1>
+    </header>
+    <section>
+        <p>
+            Alice is a computer operator of the entrance gate at an old port where people rarely go. You out of nowhere, suddenly, want to have an evening off from work to go to that port. You go to that port and suddenly run into an unexpected problem.
+        </p>
+        <p>
+            The problem is: The gate is not opening because of an encryption error in the computer software that entrance gate is using. Alice feels sorry but is unable to resolve that problem, hence asks for help as you have introduced yourself as a software engineer to him. Now it is your duty to solve his problem and save your time off.
+        </p>
+        <p>
+            While you talk to Alice, he tells you that the encryption system works in such a way that I put my password in the password field and the gate open but as people rarely come to this port, the gate is locked since a while. The encryption system for the software of gate has outdated and needs to be renewed using the latest standards set by the owner of the gate’ software.
+        </p>
+        <p>
+            After a while of research, You and Alice come to this result that the txt file emailed to Alice is the password of this gate from now on (After the update). But, the txt file mailed to Alice is some random text which should be converted into a password using the particular methodology taught to Alice by the company at the time of recruitment.
+        </p>
+        <p>
+            That is as following:
+        </p>
+        <ul>
+            <li>
+                The total non-empty lines of the txt means the first digits of the password. Like, if the txt contains 50 non empty lines, so the password’s first two digits will be 50
+            </li>
+            <li>
+                Whitespace doesn't matter once we get the max non empty lines.
+            </li>
+            <li>
+                All the vowels should be converted into numbers like A into 11, E into 22, I into 33, O into 44, U into 55. And all the consonants should remain as it is except ‘M’. M should be converted to 100.
+            </li>
+            <li>
+                After the conversion, the repeated occurrence of the same words/numbers should be deleted.
+            </li>
+            <li>
+                The password should not have any uppercase letter, they must be converted to lowercase.
+            </li>
+            <li>
+                Now the resultant should be set in alphabetical order and numbers should be placed in ascending order after the alphabets.
+            </li>
+            <li>
+                Remove any character other than number or alphabet.
+            </li>
+        </ul>
+        <p>
+            Hurrah, we have got the password. The password’s format will be like NNAAAAAANN; where N represents a number and A represents alphabets. The first number will be obtained from rule one. The alphabets and trailing numbers from rule 4.
+        </p>
+        <p>
+            Below is Alice's encrypted password which you have to decrypt. Show your software engineering skills and make your fellow software engineers proud.
+        </p>
+
+        <pre class="input">1A15d sa as16ds
+
+a56 1AS125DSFS2
+
+ADA13 SD2134S
+DFSDFHHWTUB1367G6UYWE44
+
+
+397 46SFJJRFUY5JH
+
+2GUY30UYGOI2OL6J
+K5KH3G2 4DTD52JK8479L9
+JOI9Y5T8246HK H28345JG21OI2Y76RIKUJ
+H4RYF3O9L56RF26 9U4R
+
+7U20KUJ6JUH
+NV7DTG9E8IGJ7OHY4DN
+
+
+
+
+GHC9IKGT20IGJ
+8RF29O DEH8GTI4DE6TG9J7H
+
+DC5 FUV
+3DCEHGKJTI9HU22FJ853 HY4F762D9H
+
+32J8GT3HY57J 
+
+7T6HJF2JG0
+
+42FVR8K7
+
+RFV96HY GT3P29J
+R2L4JU0GT7H5
+
+LOL</pre>
+
+        <form action="submit.php" method="POST" class = "ans">
+            <input type="hidden" name="day" value="F" />
+            <div>
+                <label for="anss">
+                    Answer:
+                </label>
+                <input type="text" name="answer" id = "anss" value="">
+            </div>
+            <br>
+            <div>
+                <label for="roll" >
+                    Roll No:
+                </label>
+                <input type="text" name="roll" id = "roll" value="">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 - PPL</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <a style="color: #046e09;" href="index.html"><< BACK</a>
+    <header>
+        <h1 class="logo">Day 2</h1>
+    </header>
+    <section>
+        
+        <p>
+            n! means n × (n − 1) × ... × 3 × 2 × 1
+<br>
+For example, 10! = 10 × 9 × ... × 3 × 2 × 1 = 3628800,
+<br>
+and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
+<br>
+Find the sum of the digits in the number 100!
+        </p>
+
+        <p>
+            I know you are thinking of brute forcing .. haha I knew it. But, how will you handle a long long long integer, too long to be saved in an long long data type. Lets see how you do it.
+            <br>
+            By the way, I got a hint for you:
+        </p>
+        <p>
+            <a href="https://math.stackexchange.com/a/451134">HINT</a>
+        </p>
+
+        <form action="submit.php" method="POST" class = "ans">
+            <input type="hidden" name="day" value="T" />
+            <div>
+                <label for="anss">
+                    Answer:
+                </label>
+                <input type="text" name="answer" id = "anss" value="">
+            </div>
+            <br>
+            <div>
+                <label for="roll" >
+                    Roll No:
+                </label>
+                <input type="text" name="roll" id = "roll" value="">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    color:#046e09;
+    border: 2px solid #046e09;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ans {
+    display: block;
+    text-align: center;
+    
+}
+
+.days {
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #046e09;
+}
+
+p {
+    display: block;
+    color: #046e09;
+}
+
+ul {
+    display: block;
+    color: #046e09;
+}
+
+.input {
+    display: block;
+    border: 1px solid #046e09;
+    border-radius: 1px;
+    padding-left: 10px;
+}
